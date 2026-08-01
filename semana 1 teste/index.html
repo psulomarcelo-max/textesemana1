@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="conteudoapp">
+            <div class="layoutgrid">
+
+
+                <!-- Lado esquerdo -->
+                <div class="esquerdo">
+
+                    <div class="Form-header">
+
+                        <h2 id="form-titulo">Nova Sugestão</h2>
+                        <input type="hidden" id="sugestao-id" value="">
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="user-name">
+                            Seu Nome <span>*</span>
+                        </label>
+                        <input type="text " id="user-name" class="form-control" placeholder="Ex: Paulo Marcelo">
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="user-mensagem">
+                            Mensagem <span>*</span>
+                        </label>
+                        <textarea name="Mensagem" id="user-mensagem" class="form-control" placeholder="Digite aqui"></textarea>
+                        
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="user-area">
+                            Área <span>*</span>
+                        </label>
+                        <select>
+                            <option value="atendimento">Atendimento</option>
+                            <option value="ti">TI</option>
+                            <option value="rh">RH</option>
+                            <option value="infraestrutura">Infraestrutura</option>
+                            <option value="comunicacao">Comunicação</option>
+                            <option value="outros">Outros...</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+                <!-- Fim lado Esquerdo -->
+
+                <!-- Lado direito -->
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
