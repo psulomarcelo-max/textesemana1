@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="principal">
+        <div id="conteudoapp">
+            <div class="layoutgrid">
+
+
+                <!-- Lado esquerdo -->
+                <div class="esquerdo">
+                    <form action="">
+                        <div class="Form-header">
+
+                            <h2 id="form-titulo">Nova Sugestão</h2>
+                            <input type="hidden" id="sugestao-id" value="">
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="user-name">
+                                Seu Nome <span>*</span>
+                            </label>
+                            <input type="text " id="user-name" class="form-control" placeholder="Ex: Paulo Marcelo">
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="user-mensagem">
+                                Mensagem <span>*</span>
+                            </label>
+                            <textarea name="Mensagem" id="user-mensagem" class="form-control"
+                                placeholder="Digite aqui"></textarea>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="user-area">
+                                Área <span>*</span>
+                            </label>
+                            <select>
+                                <option value="atendimento" class="badge-atendimento">Atendimento</option>
+                                <option value="ti" class="badge-ti">TI</option>
+                                <option value="rh" class="badge-rh">RH</option>
+                                <option value="infraestrutura" class="badge-infra">Infraestrutura</option>
+                                <option value="comunicacao" class="badge-comunicacao">Comunicação</option>
+                                <option value="outros" class="badge-outros">Outros...</option>
+                            </select>
+                        </div>
+
+
+                        <div class="btn-enviar">
+                            <button>💡 Enviar Sugestão</button>
+                        </div>
+                    </form>
+
+
+                </div>
+                <!-- Fim lado Esquerdo -->
+
+                <!-- Lado direito -->
+                <div class="direito">
+                    <div class="form-header">
+                        <h2 class="form-titulo">Sugestões Enviadas</h2>
+                        <button onclick="criarTabelaUsuarios()" class="btn-refresh">
+                            <i class="atualizar"></i> Atualizar
+                        </button>
+                    </div>
+
+                    <div class="tabelas">
+                        <table class="table-sugestao">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>AUTOR / MENSAGEM</th>
+                                    <th>ÁREA</th>
+                                    <th>AÇÕES</th>
+                                </tr>
+
+                            </thead>
+                            <br>
+                            <tbody>
+                                <td colspan="4" class="dados-tabela">
+
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
